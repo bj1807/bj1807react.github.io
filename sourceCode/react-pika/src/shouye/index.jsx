@@ -1,13 +1,18 @@
 import React, { Component } from "react";
 import "./index.scss";
-
-export default class Shouye extends Component {
+import { NavLink, BrowserRouter } from "react-router-dom";
+export default class index extends Component {
   render() {
     return (
-      <div>
-        <header>
-          <h1>LOFTER</h1>
-        </header>
+      <div className="shouyebox">
+        <div className="header">
+          <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="lala" />
+          <div className="linkbox">
+            <select>
+              <option />
+            </select>
+          </div>
+        </div>
       </div>
     );
   }
