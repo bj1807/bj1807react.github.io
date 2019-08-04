@@ -1,8 +1,29 @@
 import React, { Component } from "react";
+import tool from "../tool/tool.js";
 
 export default class Dl extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      phone: "",
+      password: ""
+    };
+  }
+  btn = ({ target }) => {
+    this.setState({
+      [target.name]: target.value
+    });
+  };
+  onSubmit1 = pandName => {
+    let data = tool(this.state, pandName);
+    if (data.status) {
+      alert(data.msg);
+      window.location.replace("/shouye");
+    } else {
+      alert(data.msg);
+    }
+  };
   render() {
-    const { phone, password, onHandleChange } = this.props;
     return (
       <div>
         <div className="inputbox">
@@ -11,23 +32,26 @@ export default class Dl extends Component {
               <input
                 type="text"
                 className="plone"
-                value={phone}
+                value={this.state.phone}
+                placeholder="手机号(中国大陆)"
                 name="phone"
-                onChange={onHandleChange}
-              />
-            </label>
-
-            <label>
-              <input
-                type="text"
-                className="plone"
-                value={password}
-                name="password"
-                onChange={onHandleChange}
+                onChange={this.btn}
               />
             </label>
           </form>
+
+          <input
+            type="text"
+            className="plone"
+            value={this.state.password}
+            placeholder="密码(6-16位)"
+            name="password"
+            onChange={this.btn}
+          />
         </div>
+        <button className="zcbtn" onClick={() => this.onSubmit1("dl")}>
+          点击登录
+        </button>
       </div>
     );
   }

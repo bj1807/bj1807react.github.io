@@ -1,20 +1,66 @@
-.shouyebox {
-  width: 100%;
-  height: 1000px;
-  background: #363c41;
+.shou-box {
+  background: #383e43;
 }
-.header {
+.shou-login {
+  // background: red;
   width: 100%;
-  height: 140px;
-  img {
-    float: left;
-    margin: 10px;
+  height: 100%;
+  .shou-login-content {
+    margin: 0 18px;
+    width: 100%;
+    height: 99%;
+    overflow: hidden;
+    // background: #cccccc;
   }
-  .linkbox {
+  .imgbox {
+    width: 50%;
+    height: 100%;
     float: left;
-    width: 40%;
-    height: 50%;
-    margin-top: 35px;
+  }
+  .flex {
+    display: flex;
+  }
+  .justify-content {
+    justify-content: space-between;
+  }
+  .shou-select {
+    height: 80px;
+    position: absolute;
+    top: 39px;
+    font-size: 30px;
+    right: 0;
+    color: #cccccc;
+    background: #f8f8f8;
+    outline: none;
+    margin-top: 40px;
+    z-index: 5;
+  }
+  .rightbox1 {
+    width: 35%;
+    height: 80px;
+    margin-right: 10%;
     background: white;
+    line-height: 80px;
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+    float: right;
+  }
+  .shou-option {
+    font-size: 50px;
+    padding: 10px;
+    background: gray;
+    z-index: 5;
+    color: black;
+    width: 300px;
+    opacity: 0.8;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 36px;
+    }
   }
 }
