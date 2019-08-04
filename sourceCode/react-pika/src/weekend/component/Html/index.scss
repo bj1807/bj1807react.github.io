@@ -49,10 +49,10 @@
     margin-top: 60px;
 }
 
-a{
-    text-decoration: none;
-    color: gray;
-}
+// a{
+//     text-decoration: none;
+//     color: gray;
+// }
 .linkbox{
     width: 100%;
     margin-top: 30px;
@@ -71,8 +71,15 @@ a{
         height: 70px;
         font-size: 40px;
         line-height: 55px;
+        a{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            display: inline-block;
+            color: gray;
+        }
     }
-    li:hover{
+    .active{
             border-bottom: 2px #97CB00 solid;
     }
 }
@@ -109,7 +116,7 @@ a{
             background: white;
             font-size: 30px;
             height: 40px;
-            // outline: none;
+            outline: none;
             width: 33%;
             margin-top: 46px;
             color: green;
@@ -121,8 +128,8 @@ a{
         height: 30px;
         border: none;
         margin-top: 50px;
-            font-size: 30px;
-            color: #BABABA;
+        font-size: 30px;
+        color: #BABABA;
         float: left;
         border-bottom: 1px solid #BABABA;
         outline: none;
@@ -139,4 +146,15 @@ a{
         height: 30px;
         margin-top: 25px;
     }
+}
+.zcbtn{
+    width: 70%;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 35px;
+    margin-left: 15%;
+    background: white;
+    color: #BABABA;
+    border: 1px solid gray;
+    outline: none;
 }
