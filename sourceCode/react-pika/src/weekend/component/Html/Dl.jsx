@@ -21,18 +21,9 @@ export default class Dl extends Component {
         if (data.status) {
             // console.log('这个时候 我们可以去请求登录接口')
             alert(data.msg)
-            // if (pandName==='register') {
-            //     this.setState({
-            //         isLongin:true
-            //     })             
-            // }
+            window.location.replace('/shouye');
+            
         } else {
-        //    if (pandName==='dl') {
-        //     this.setState({
-        //         errcount:this.state.errcount+1
-        //     })
-        //    }
-            // console.log(this.state.errcount)
             alert(data.msg)
         }
     }
