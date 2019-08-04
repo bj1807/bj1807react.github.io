@@ -1,3 +1,33 @@
-.login {
-  font-size: 20px;
+.shou-box {
+  background: #383e43;
+}
+.shou-login {
+  // background: red;
+  width: 100%;
+  height: 100%;
+  .shou-login-content {
+    margin: 0 18px;
+    width: 95%;
+    height: 99%;
+    // background: #cccccc;
+  }
+  .flex {
+    display: flex;
+  }
+  .justify-content {
+    justify-content: space-between;
+  }
+  .shou-select {
+    height: 80px;
+    font-size: 30px;
+    color: #cccccc;
+    background: #f8f8f8;
+    outline: none;
+    margin: auto 0px;
+  }
+  .shou-option {
+    font-size: 50px;
+    padding: 10px;
+    color: black;
+  }
 }
