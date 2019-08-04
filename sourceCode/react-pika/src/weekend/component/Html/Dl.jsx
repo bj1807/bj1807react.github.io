@@ -1,19 +1,31 @@
 import React, { Component } from 'react'
 
 export default class Dl extends Component {
-    constructor(){
-        super()
-        this.state={
-            phone:'手机号(中国大陆)',
-            password:'手机号(中国大陆)',
-        }
-    }
+    
     render() {
+        const {phone,password,onHandleChange} = this.props
         return (
             <div>
-                <div className='inputbox'> 
-                    <input type="text" className='plone' value={this.state.phone}/>
-                    <input type="text" className='plone' value={this.state.password}/>
+                <div className='inputbox'>
+                    <form>
+                        <label>
+                        <input
+                        type="text" 
+                        className='plone' 
+                        value={phone}
+                        name='phone'
+                        onChange={onHandleChange}
+                    />
+                        </label>
+                    </form>
+                    
+                    <input 
+                        type="text" 
+                        className='plone' 
+                        value={password}
+                        name='password'
+                        onChange={onHandleChange}
+                    />
                 </div>
             </div>
         )

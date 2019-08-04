@@ -1,30 +1,23 @@
 import React, { Component } from 'react'
 
 export default class Zc extends Component {
-    constructor(){
-        super()
-        this.state={
-            zc:'手机号(中国大陆)',
-            tpcode:'图片验证码',
-            yzcode:'验证码',
-            szpassword:'设置密码(6-18位)'
-        }
-    }
+
     render() {
+        const {zc,tpcode,yzcode,szpassword,onHandleChange} = this.props;
         return (
             <div>
                 <div className='inputbox'> 
-                    <input className='plone' type="text" value={this.state.zc}/>
+                    <input className='plone' type="text" value={zc} name='zc' onChange={onHandleChange}/>
                     <div>
-                    <input className='tpcode' type="text" value={this.state.tpcode}/>
+                    <input className='tpcode' type="text" value={tpcode} name='tpcode' onChange={onHandleChange}/>
                     <img className='tpimg' src="http://www.lofter.com/lpt/photoCaptcha/getPhotoCaptcha.do?width=100&height=35&60176" alt="啦"/>
                     <button>换一张</button>
                     </div>
                     <div className='yzbox'>
-                    <input className='yzcode' type="text" value={this.state.yzcode}/>
+                    <input className='yzcode' type="text" value={yzcode} name='yzcode' onChange={onHandleChange}/>
                     <button>发送验证码</button>
                     </div>
-                    <input className='plone' type="text" value={this.state.szpassword}/>
+                    <input className='plone' type="text" value={szpassword} name='szpassword' onChange={onHandleChange}/>
                 </div>
             </div>
         )
