@@ -1,0 +1,63 @@
+.Centens-box {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  margin-top: 50px;
+  width: 100%;
+  height: 1134px;
+  background: #383e43;
+  overflow-y: auto;
+
+  .Centens-b-ping {
+    margin: 0 18px;
+    width: 95%;
+    height: 99%;
+    background: red;
+
+    margin-bottom: 600px;
+  }
+  .Centens-b-top {
+    width: 100%;
+    height: 600px;
+    background: #909090;
+    overflow: hidden;
+  }
+  .Centens-b-top-right-triangle {
+    width: 0px;
+
+    height: 0px;
+
+    border-left: 130px solid #fff;
+
+    border-top: 115px solid transparent;
+
+    border-bottom: 115px solid transparent;
+
+    margin: 200px auto;
+  }
+  .Centens-box-img {
+    margin-top: -40px;
+  }
+  .Centens-box-but {
+    margin-bottom: 50px;
+    .Centens-box-but-t {
+      width: 100%;
+      height: 100px;
+    }
+  }
+  .Centens-box-flex {
+    margin-bottom: 50px;
+  }
+  .flex {
+    display: flex;
+  }
+  .justify-content {
+    justify-content: space-between;
+  }
+  .Centens-box-flex-left {
+    color: #999999;
+    font-size: 40px;
+    padding: 15px;
+  }
+}
