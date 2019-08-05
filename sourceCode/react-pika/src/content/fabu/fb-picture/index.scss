@@ -1,0 +1,112 @@
+.fb-p-box {
+  height: 100vh;
+  background: #383e42;
+  // padding: 30px 20px;
+  .fb-g-hd {
+    // width: 600px;
+    margin: 0 auto 50px;
+    .sela {
+      margin-right: 140px;
+    }
+    .sel {
+      position: relative;
+      width: 264px;
+      height: 80px;
+      line-height: 40px;
+      overflow: hidden;
+      background: #dfdfdf;
+      .shou-select {
+        width: 264px;
+        height: 80px;
+        font-size: 20px;
+        .shou-option {
+          font-size: 20px;
+          padding: 10px;
+          color: black;
+        }
+      }
+    }
+  }
+  .flex {
+    display: flex;
+    .flex-bw {
+      justify-content: space-between;
+    }
+  }
+  .fb-content-box {
+    background: #f0f0f0;
+    margin: 30px 0 0;
+    padding: 25px;
+    .fb-m-edit {
+      margin: 0 0 50px;
+      line-height: 40px;
+      .main-head {
+        position: relative;
+        border: 1px solid #969696;
+        font-size: 32px;
+        background: #fff;
+        text-align: center;
+        color: #666;
+      }
+    }
+    .editor {
+      margin: 0 0 50px;
+      .w-ipt {
+        position: relative;
+        border: 1px solid #969696;
+        font-size: 40px;
+        background: #fff;
+        textarea {
+          display: block;
+          width: 310px;
+          height: 225px;
+          font-size: 50px;
+          overflow: hidden;
+          line-height: 40px;
+          padding: 14px;
+          border: 0;
+          background: none;
+        }
+      }
+    }
+
+    .fb-option {
+      position: relative;
+      height: 100%;
+      padding: 0 0 0 30px;
+      margin: 0 0 50px;
+      line-height: 40px;
+      font-size: 20px;
+      .fb-s {
+        color: #969696;
+      }
+      .san {
+        position: absolute;
+        top: -180px;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        border-left: 15px solid #666;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        margin: 200px auto;
+      }
+    }
+    .btn {
+      margin: -25px 0 0;
+      .btn-con {
+        display: block;
+        width: 180px;
+        height: 80px;
+        line-height: 80px;
+        border: 0;
+        text-align: center;
+        font-size: 50px;
+        color: #ecf9fa;
+        background-position: 0 -90px;
+        border-radius: 4px;
+        background: #73bd1f;
+      }
+    }
+  }
+}
