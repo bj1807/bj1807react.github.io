@@ -3,7 +3,7 @@
 }
 .shou-login {
   // background: red;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   .shou-login-content {
     margin: 0 18px;
@@ -36,17 +36,18 @@
     z-index: 5;
   }
   .rightbox1 {
-    width: 35%;
+    width: 40%;
     height: 80px;
-    margin-right: 10%;
+    // margin-right: 10%;
     background: white;
     line-height: 80px;
     border-radius: 10px;
     font-size: 40px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 60px;
     position: relative;
     float: right;
+    margin-right: 0.2rem;
   }
   .shou-option {
     font-size: 50px;

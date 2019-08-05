@@ -21,12 +21,12 @@ export default class Nav extends Component {
   render() {
     return (
       <div>
-        <div className="shou-login">
+        <div className="shou-login ">
           <div className="imgbox">
             <img
               src={`${process.env.PUBLIC_URL}/img/3.png`}
               alt="lala"
-              style={{ height: "100%" }}
+              style={{ height: "100%", marginTop: "6px" }}
             />
           </div>
           <div
