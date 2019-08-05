@@ -19,6 +19,7 @@ export default class Xihuan extends Component {
             <input
               className="Xihuan-b-input"
               type="text"
+              readonly="readonly"
               defaultValue="暂无内容"
             />
           </div>
