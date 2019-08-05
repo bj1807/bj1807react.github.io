@@ -17,7 +17,7 @@ export default class Fabu extends Component {
             </div>
             <div className="editor">
               <div className="w-ipt">
-                <textarea placeholder="正文内容" />
+                <textarea placeholder="正文" />
               </div>
             </div>
             <div className="fb-option">
