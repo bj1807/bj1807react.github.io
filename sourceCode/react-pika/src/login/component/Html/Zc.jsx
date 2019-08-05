@@ -19,6 +19,7 @@ export default class Zc extends Component {
     let data = tool(this.state, pandName);
     if (data.status) {
       alert(data.msg);
+      window.location.replace("/shouye");
     } else {
       alert(data.msg);
     }
